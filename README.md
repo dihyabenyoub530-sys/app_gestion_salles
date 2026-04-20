@@ -1,8 +1,7 @@
 # Application de gestion des salles
 
 Nom : Benyoub Dyhiagit add .
-git commit -m "Mise a jour README 1"
-git push
+
 
 ## Description
 Application Python de gestion des salles avec :
