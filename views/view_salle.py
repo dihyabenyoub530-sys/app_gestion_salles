@@ -134,7 +134,7 @@ class ViewSalle(ctk.CTk):
             self.entry_capacite.insert(0, salle.capacite)
         else:
             messagebox.showerror("Erreur", "Salle introuvable")
-
+print("Interface graphique lancée")
 
 
 
