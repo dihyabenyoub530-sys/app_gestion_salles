@@ -32,3 +32,5 @@ class ServiceSalle:
 
     def recuperer_salles(self):
         return self.dao_salle.get_salles()
+
+    print("Ajout d'une salle en cours...")
