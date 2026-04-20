@@ -23,8 +23,10 @@ class DataSalle:
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM salle")
         rows = cursor.fetchall()
+
         salles = []
         for r in rows:
             salles.append(Salle(r[0], r[1], r[2], r[3]))
+
         conn.close()
         return salles
