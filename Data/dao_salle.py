@@ -59,3 +59,5 @@ class DataSalle:
         if row:
             return Salle(row[0], row[1], row[2], row[3])
         return None
+
+    print("Connexion à la base de données établie")
