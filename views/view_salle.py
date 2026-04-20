@@ -10,7 +10,7 @@ class ViewSalle(ctk.CTk):
 
         self.service_salle = ServiceSalle()
 
-        self.title("Gestion des salles")
+        self.title("Application de gestion des salles")
         self.geometry("800x600")
 
         # ===== Cadre Informations =====
