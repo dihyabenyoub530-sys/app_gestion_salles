@@ -40,3 +40,35 @@ for s in liste:
     # Supprimer la salle test
     dao.delete_salle("A102")
     print("Salle A102 supprimée")
+    from services.services_salle import ServiceSalle
+    from models.salle import Salle
+
+    service = ServiceSalle()
+
+    # Ajouter
+    salle1 = Salle("B101", "Salle Service", "Classe", 35)
+    succes, message = service.ajouter_salle(salle1)
+    print(message)
+
+    # Modifier
+    salle2 = Salle("B101", "Salle Service Modifiée", "Laboratoire", 40)
+    succes, message = service.modifier_salle(salle2)
+    print(message)
+
+    # Rechercher
+    salle_trouvee = service.rechercher_salle("B101")
+    if salle_trouvee:
+        print("Salle trouvée :")
+        salle_trouvee.afficher_infos()
+
+    print("-------------")
+
+    # Afficher toutes les salles
+    liste = service.recuperer_salles()
+    for s in liste:
+        s.afficher_infos()
+        print("-------------")
+
+    # Supprimer
+    service.supprimer_salle("B101")
+    print("Salle B101 supprimée")
