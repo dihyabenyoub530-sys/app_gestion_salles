@@ -2,4 +2,5 @@ from views.view_salle import ViewSalle
 
 app = ViewSalle()
 app.mainloop()
-print("Application prête")
+print("Application prê
+
